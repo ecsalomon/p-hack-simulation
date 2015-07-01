@@ -28,7 +28,7 @@ results <- ddply(simValues,
                  .variables = "simid",
                  function (x) phack(initialN=x$batchSize, hackrate=x$batchSize,
                                     grp1M=x$delta, maxN=x$maxSize, 
-                                    alternative="two.sided", sims=1000, 
+                                    alternative="two.sided", sims=10000, 
                                     graph=FALSE, output="power", quiet=TRUE, 
                                     ), 
                  .progress="text")
@@ -49,7 +49,7 @@ batch_labeller <- function(var, value){
     value <- paste(value, "per cell")
   }
   if (var=="nbatches") { 
-    value <- paste(value, "batches")
+    value <- paste(value, "batch(es)")
   }
   return(value)
 }
