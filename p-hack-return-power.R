@@ -19,7 +19,7 @@
 
 # Usage
   # phack(initialN=30, hackrate=5, grp1M=0, grp2M=0, grp1SD=1, grp2SD=1, 
-  # maxN=200, successN=1, sequential=FALSE, direction="FALSE"either", alpha=.05, 
+  # maxN=200, successN=1, sequential=FALSE, direction="either", alpha=.05, 
   # alternative="greater", graph=TRUE, sims=1000, output="original", 
   # quiet=FALSE)
 
